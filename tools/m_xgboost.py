@@ -41,6 +41,6 @@ xgb_model = CatBoostRegressor(iterations=1000,
                            task_type="GPU")
 
 # Train the model
-xgb_model.fit(X_train, y_train)
+xgb_model.fit(X_train, y_train, verbose=True)
 X_train.info()
 xgb_model
