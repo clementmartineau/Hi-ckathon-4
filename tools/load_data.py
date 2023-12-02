@@ -64,5 +64,5 @@ dataframes["train-data"]["year"], dataframes["train-data"]["month_range"] = zip(
 dataframes["train-data"].drop(columns=["Date"], inplace=True)
 
 # one hot encoding for month range
-dataframes["train-data"] = pd.get_dummies(dataframes["train-data"], columns = ['month_range']) 
+dataframes["train-data"] = pd.get_dummies(dataframes["train-data"], columns = ['month_range'])
 print(dataframes["train-data"].isna().sum())
